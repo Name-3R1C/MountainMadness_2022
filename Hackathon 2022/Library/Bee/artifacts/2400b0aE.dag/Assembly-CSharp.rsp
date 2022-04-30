@@ -328,10 +328,12 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/CameraControl.cs"
 "Assets/CollectItem.cs"
+"Assets/Course.cs"
 "Assets/Timer.cs"
 "Assets/Transitions.cs"
 "Assets/UIController.cs"
 "Assets/endGameReason.cs"
+"Assets/moneyLeft.cs"
 "Assets/player.cs"
 "Assets/restartEndGame.cs"
 -langversion:9.0

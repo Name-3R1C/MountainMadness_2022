@@ -44,6 +44,8 @@
      <Compile Include="Assets/restartEndGame.cs" />
      <Compile Include="Assets/player.cs" />
      <Compile Include="Assets/endGameReason.cs" />
+     <Compile Include="Assets/moneyLeft.cs" />
+     <Compile Include="Assets/Course.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

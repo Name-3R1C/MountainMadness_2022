@@ -7,29 +7,43 @@ public class Timer : MonoBehaviour
 {
     public float timeValue = 300;
     public Text timeText;
-    public bool timerRunning = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        timerRunning = true;
+        // StartCoroutine(wait());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timerRunning)
+        if(timeValue > 0)
         {
-            if(timeValue > 0)
-            {
-                timeValue -= Time.deltaTime;
-            }
+            timeValue -= Time.deltaTime;
+            DisplayTime(timeValue);
         }
+        // call for Gamer Over UI
+        // else{
+
+        // }
         
-        DisplayTime(timeValue);
     }
+
+    // IEnumerator wait()
+    // {
+    //     //Print the time of when the function is first called.
+    //     Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+    //     //yield on a new YieldInstruction that waits for 5 seconds.
+    //     yield return new WaitForSeconds(5);
+
+    //     //After we have waited 5 seconds print the time again.
+    //     Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    // }
+
     void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay += 1;
+        timeToDisplay += 4;
         if(timeToDisplay < 0)
         {
             timeToDisplay = 0;
@@ -40,4 +54,6 @@ public class Timer : MonoBehaviour
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+
 }
