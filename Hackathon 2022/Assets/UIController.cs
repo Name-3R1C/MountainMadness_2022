@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
     public Text[] CourseHeaders;
     public GameObject[] coursesList;
     public GameObject SubUI;
+    public GameObject pauseUI;
     public endGameReason reason;
 
     public Text cashCount;
@@ -34,6 +35,12 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetAxis("Cancel") != 0)
+        {
+            pauseUI.SetActive(true);
+        }
+
         if (cash <= 0)
         {
             reason.money();
