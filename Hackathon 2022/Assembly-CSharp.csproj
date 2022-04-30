@@ -56,6 +56,8 @@
     <Compile Include="Assets/UIController.cs" />
     <Compile Include="Assets/player.cs" />
     <Compile Include="Assets/CameraControl.cs" />
+    <Compile Include="Assets/Transitions.cs" />
+    <Compile Include="Assets/CollectItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

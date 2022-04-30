@@ -11,15 +11,24 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        courses = new List<int>();
+    }
+
+
+    public void CollectItem(int item)
+    {
+        courses.Add(item);
     }
 
     // Update is called once per frame
     void Update()
     {
+        int i = 0;
        foreach (int course in fullcrslist)
         {
-
+            if (courses.Fin
+            coursesList[i].SetActive(true);
+            i++;
         }
     }
 }
