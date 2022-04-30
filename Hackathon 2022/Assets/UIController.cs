@@ -24,10 +24,23 @@ public class UIController : MonoBehaviour
     void Update()
     {
         int i = 0;
+
+        bool exists = false;
        foreach (int course in fullcrslist)
         {
-            if (courses.Fin
-            coursesList[i].SetActive(true);
+            foreach (int c in courses)
+            {
+                if (course == c)
+                {
+                    exists = true;
+                    break;
+                }
+                    
+            }
+
+            if (exists)
+                coursesList[i].SetActive(true);
+
             i++;
         }
     }
