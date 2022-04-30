@@ -9,6 +9,7 @@ public class moneyLeft : MonoBehaviour
     public int money = 20000;
     public Text moneyText;
 
+    // Start is called before the first frame update
     void Start()
     {
         moneyText.text = "20,000";

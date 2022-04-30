@@ -8,6 +8,7 @@ public class Course : MonoBehaviour
     public int courseCompleted = 0;
     public Text courseCompletedText;
     
+    // Start is called before the first frame update
     void Start()
     {
         courseCompletedText.text = "Total Courses Complete: 0/8";
