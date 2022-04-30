@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour
     List<int> courses;
     int[] courseCount = new int[4];
 
-    int cash = 5000;
+    int cash = 2000;
 
     int[] fullcrslist = { 120, 125, 225, 276, 300, 150, 152, 232, 316, 340, 103, 105, 201, 325, 428, 101, 110, 202, 210, 310 };
     public Text[] CourseHeaders;
@@ -17,6 +17,7 @@ public class UIController : MonoBehaviour
     public CameraControl cameraCtr;
     public GameObject pauseUI;
     public GameObject GradAnim;
+    public GraduateBarrier barrier;
     public endGameReason reason;
 
     public Text cashCount;
@@ -31,7 +32,7 @@ public class UIController : MonoBehaviour
     public void CollectItem(int item)
     {
         courses.Add(item);
-        cash -= 500;
+        cash -= 400;
     }
 
     // Update is called once per frame
@@ -43,7 +44,7 @@ public class UIController : MonoBehaviour
             pauseUI.SetActive(true);
         }
 
-        if (cash <= 0)
+        if (cash < 0)
         {
             reason.money();
             cameraCtr.MoveCamera = true;
@@ -94,6 +95,7 @@ public class UIController : MonoBehaviour
         if (courseCount[0] == 5 || courseCount[1] == 5 || courseCount[2] == 5 || courseCount[3] == 5)
         {
             GradAnim.SetActive(true);
+            barrier.AllowExit();
         }
 
         listCrcs.text = "Total Courses Finished: " + total;

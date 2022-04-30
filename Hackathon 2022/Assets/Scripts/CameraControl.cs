@@ -8,7 +8,7 @@ public class CameraControl : MonoBehaviour
     public Animator anim;
     public Rigidbody rb;
     float Sensitivity = 3f;
-    float MoveSensitivity = 3550;
+    float MoveSensitivity = 6550;
     float maxSprint = 0.75f;
     float walkSpeed = 0.25f;
     float currentSpeed = 0;
@@ -40,10 +40,7 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (MoveCamera)
-        {
-            MoveCam();
-        }
+        
 
         isSprinting = Input.GetAxis("Sprint") != 0;
 
@@ -134,5 +131,11 @@ public class CameraControl : MonoBehaviour
         {
             rb.AddRelativeForce(-Vector3.forward * MoveSensitivity);
         }
+
+if (MoveCamera)
+        {
+            MoveCam();
+        }
+
     }
 }

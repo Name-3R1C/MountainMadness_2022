@@ -57,7 +57,9 @@
     <Compile Include="Assets/Scripts/Transitions.cs" />
     <Compile Include="Assets/Scripts/CameraControl.cs" />
     <Compile Include="Assets/Sounds/Timer.cs" />
+    <Compile Include="Assets/Transition.cs" />
     <Compile Include="Assets/Scripts/CollectItem.cs" />
+    <Compile Include="Assets/ChangeScenes.cs" />
     <Compile Include="Assets/Scripts/UIController.cs" />
     <Compile Include="Assets/Scripts/restartEndGame.cs" />
     <Compile Include="Assets/Scripts/Course.cs" />

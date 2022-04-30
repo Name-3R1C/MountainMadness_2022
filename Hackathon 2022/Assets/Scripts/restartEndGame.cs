@@ -13,7 +13,7 @@ public class restartEndGame : MonoBehaviour
 
     }
     public void RestartGame() {
-             SceneManager.LoadScene("SampleScene");
+             SceneManager.LoadScene("Intro");
          }
     public void endGame(){
          Application.Quit();
