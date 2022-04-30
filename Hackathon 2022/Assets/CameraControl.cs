@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public Camera camera;
+    public Animator anim;
     public Rigidbody rb;
     float Sensitivity = 3f;
     float MoveSensitivity = 2050;
@@ -60,6 +61,15 @@ public class CameraControl : MonoBehaviour
         if (rb.velocity.z < -currentSpeed)
         {
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -currentSpeed);
+        }
+
+        if (rb.velocity.magnitude > 0.15f)
+        {
+            anim.speed = 2f;
+        }
+        else
+        {
+            anim.speed = 0;
         }
 
         if (Input.GetAxis("Mouse X") > 0)

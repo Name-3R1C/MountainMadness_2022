@@ -13,6 +13,8 @@ public class CollectItem : MonoBehaviour
     public string PlayerName = "Player";
     public int value;
 
+    public AudioSource src;
+
 
     private void OnEnable()
     {
@@ -24,6 +26,7 @@ public class CollectItem : MonoBehaviour
         if (other.gameObject.name == PlayerName)
         {
             mainController.CollectItem(value);
+            src.Play();
             this.gameObject.SetActive(false);
         }
     }

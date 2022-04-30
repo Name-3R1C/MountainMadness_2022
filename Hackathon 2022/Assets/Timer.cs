@@ -8,6 +8,9 @@ public class Timer : MonoBehaviour
     public float timeValue = 300;
     public Text timeText;
 
+    public endGameReason GameReason;
+    public GameObject SubUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,11 @@ public class Timer : MonoBehaviour
         {
             timeValue -= Time.deltaTime;
             DisplayTime(timeValue);
+        }
+        else
+        {
+            GameReason.timeEnd();
+            SubUI.SetActive(true);
         }
         // call for Gamer Over UI
         // else{
