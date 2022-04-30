@@ -13,6 +13,8 @@ public class CollectItem : MonoBehaviour
     public string PlayerName = "Player";
     public int value;
 
+    public float timeOut = 0;
+
     public AudioSource src;
 
     public bool hit;
@@ -25,11 +27,12 @@ public class CollectItem : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == PlayerName)
+        if (other.gameObject.name == PlayerName && timeOut <= 0)
         {
             mainController.CollectItem(value);
             src.Play();
-           // this.gameObject.SetActive(false);
+            // this.gameObject.SetActive(false);
+            timeOut = 3;
         }
     }
 
@@ -40,7 +43,13 @@ public class CollectItem : MonoBehaviour
         {
             mainController.CollectItem(value);
             src.Play();
-          //  this.gameObject.SetActive(false);
+            //  this.gameObject.SetActive(false);
+            hit = false;
+        }
+
+        if (timeOut > 0)
+        {
+            timeOut -= Time.deltaTime;
         }
     }
 }
