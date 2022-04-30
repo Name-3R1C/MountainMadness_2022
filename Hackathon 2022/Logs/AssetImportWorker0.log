@@ -1461,3 +1461,21 @@ Received Import Request.
   path: Assets/Prefabs/Father.prefab
   artifactKey: Guid(8e01ed8287dde4101b1e16df6072c090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Father.prefab using Guid(8e01ed8287dde4101b1e16df6072c090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12cb9e580d35054f848bdc80fa4f7ec') in 0.053043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 419.639287 seconds.
+  path: Assets/Prefabs/NewLayer.terrainlayer
+  artifactKey: Guid(5e57f5bcdb8794fed87bf4e7edcf34e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NewLayer.terrainlayer using Guid(5e57f5bcdb8794fed87bf4e7edcf34e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92732704983b16fedf7b473c0513a970') in 0.035123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.436695 seconds.
+  path: Assets/2d_maze_2.svg
+  artifactKey: Guid(3ab0e36f8af3e45f88b5801490ec7bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d_maze_2.svg using Guid(3ab0e36f8af3e45f88b5801490ec7bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b298b7b44ab2d2158cee7914cdf90e15') in 0.297797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.882489 seconds.
+  path: Assets/2d_maze_2.png
+  artifactKey: Guid(2883d1318b4b0426ab5f42c79126050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d_maze_2.png using Guid(2883d1318b4b0426ab5f42c79126050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b746e85bb758e8f88d782f50f0477f') in 0.020172 seconds 
