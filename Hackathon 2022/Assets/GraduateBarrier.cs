@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class GraduateBarrier : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    BoxCollider[] barriers;
+
+
+    private void OnTriggerEnter(Collider other)
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    public void AllowExit()
     {
-        
+        foreach (BoxCollider boxc in barriers)
+        {
+            boxc.isTrigger = true;
+        }
     }
 }

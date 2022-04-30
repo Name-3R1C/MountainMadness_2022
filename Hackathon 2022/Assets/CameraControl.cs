@@ -8,7 +8,7 @@ public class CameraControl : MonoBehaviour
     public Animator anim;
     public Rigidbody rb;
     float Sensitivity = 3f;
-    float MoveSensitivity = 2550;
+    float MoveSensitivity = 3550;
     float maxSprint = 0.75f;
     float walkSpeed = 0.25f;
     float currentSpeed = 0;
@@ -45,7 +45,7 @@ public class CameraControl : MonoBehaviour
             MoveCam();
         }
 
-        isSprinting = Input.GetKey(KeyCode.LeftShift);
+        isSprinting = Input.GetAxis("Sprint") != 0;
 
         if (isSprinting)
             currentSpeed = maxSprint;
