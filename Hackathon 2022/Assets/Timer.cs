@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
 
     public endGameReason GameReason;
     public GameObject SubUI;
+    public CameraControl cameraCtr;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Timer : MonoBehaviour
         else
         {
             GameReason.timeEnd();
+            cameraCtr.MoveCamera = true;
             SubUI.SetActive(true);
         }
         // call for Gamer Over UI
@@ -39,7 +41,6 @@ public class Timer : MonoBehaviour
 
     void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay += 4;
         if(timeToDisplay < 0)
         {
             timeToDisplay = 0;

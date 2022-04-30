@@ -10,10 +10,11 @@ public class UIController : MonoBehaviour
 
     int cash = 20000;
 
-    int[] fullcrslist = { 120, 125, 225, 276, 300, 150, 152, 232, 316, 340, 103, 105, 201, 325, 428, 101, 110, 102, 105, 110 };
+    int[] fullcrslist = { 120, 125, 225, 276, 300, 150, 152, 232, 316, 340, 103, 105, 201, 325, 428, 101, 110, 202, 210, 310 };
     public Text[] CourseHeaders;
     public GameObject[] coursesList;
     public GameObject SubUI;
+    public CameraControl cameraCtr;
     public GameObject pauseUI;
     public endGameReason reason;
 
@@ -44,6 +45,7 @@ public class UIController : MonoBehaviour
         if (cash <= 0)
         {
             reason.money();
+            cameraCtr.MoveCamera = true;
             SubUI.SetActive(true);
             gameObject.SetActive(false);
         }

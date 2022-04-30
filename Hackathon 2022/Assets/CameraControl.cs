@@ -16,15 +16,34 @@ public class CameraControl : MonoBehaviour
     public bool isSprinting = false;
 
     public int roty = 0;
+
+    public bool MoveCamera = false;
+
+    int iterations = 25;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    public void MoveCam()
+    {
+        if (iterations > 0)
+        {
+            camera.transform.Translate(Vector3.back);
+            iterations--;
+        }
+        else
+            MoveCamera = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (MoveCamera)
+        {
+            MoveCam();
+        }
 
         isSprinting = Input.GetKey(KeyCode.LeftShift);
 

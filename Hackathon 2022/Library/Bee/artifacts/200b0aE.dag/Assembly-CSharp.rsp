@@ -333,6 +333,7 @@
 "Assets/CollectItem.cs"
 "Assets/Course.cs"
 "Assets/endGameReason.cs"
+"Assets/GraduateBarrier.cs"
 "Assets/moneyLeft.cs"
 "Assets/player.cs"
 "Assets/restartEndGame.cs"

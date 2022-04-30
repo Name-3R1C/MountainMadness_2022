@@ -63,6 +63,7 @@
     <Compile Include="Assets/Course.cs" />
     <Compile Include="Assets/player.cs" />
     <Compile Include="Assets/endGameReason.cs" />
+    <Compile Include="Assets/GraduateBarrier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

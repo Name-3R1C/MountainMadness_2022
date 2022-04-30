@@ -15,6 +15,8 @@ public class CollectItem : MonoBehaviour
 
     public AudioSource src;
 
+    public bool hit;
+
 
     private void OnEnable()
     {
@@ -27,7 +29,18 @@ public class CollectItem : MonoBehaviour
         {
             mainController.CollectItem(value);
             src.Play();
-            this.gameObject.SetActive(false);
+           // this.gameObject.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        // test
+        if (hit)
+        {
+            mainController.CollectItem(value);
+            src.Play();
+          //  this.gameObject.SetActive(false);
         }
     }
 }
