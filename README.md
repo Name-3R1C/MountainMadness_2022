@@ -1,4 +1,4 @@
-# MountainMadness_2022
+# Ray Coon
 Submission for Mountain Madness Hackathon 2022
 
 Link to WebGL build: https://kennyzhang620.github.io/game_test/
