@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets/UIController.cs" />
     <Compile Include="Assets/player.cs" />
+    <Compile Include="Assets/CameraControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Models/BodyGuards 2/ReadMe.txt.txt" />
