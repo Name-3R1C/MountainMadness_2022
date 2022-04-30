@@ -694,6 +694,7 @@ MonoBehaviour:
   timeText: {fileID: 113461169}
   GameReason: {fileID: 1104128199}
   SubUI: {fileID: 1359351336}
+  pauseMenu: {fileID: 1418280818}
   cameraCtr: {fileID: 1949173713}
 --- !u!114 &113461172
 MonoBehaviour:
@@ -9100,6 +9101,14 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1547866770}
+    - target: {fileID: 5945688946509090224, guid: 0f8e2c875fd484911adaeb1b7c17e185, type: 3}
+      propertyPath: endMenu
+      value: 
+      objectReference: {fileID: 1418280818}
+    - target: {fileID: 5945688946509090224, guid: 0f8e2c875fd484911adaeb1b7c17e185, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1359351336}
     - target: {fileID: 5945688946509090226, guid: 0f8e2c875fd484911adaeb1b7c17e185, type: 3}
       propertyPath: m_IsActive
       value: 0

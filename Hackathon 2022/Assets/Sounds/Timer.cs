@@ -10,6 +10,8 @@ public class Timer : MonoBehaviour
 
     public endGameReason GameReason;
     public GameObject SubUI;
+
+    public GameObject pauseMenu;
     public CameraControl cameraCtr;
 
     // Start is called before the first frame update
@@ -21,22 +23,25 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timeValue > 0)
-        {
-            timeValue -= Time.deltaTime;
-            DisplayTime(timeValue);
-        }
-        else
-        {
-            GameReason.timeEnd();
-            cameraCtr.MoveCamera = true;
-            SubUI.SetActive(true);
-        }
-        // call for Gamer Over UI
-        // else{
 
-        // }
-        
+        if (!pauseMenu.activeSelf)
+        {
+            if (timeValue > 0)
+            {
+                timeValue -= Time.deltaTime;
+                DisplayTime(timeValue);
+            }
+            else
+            {
+                GameReason.timeEnd();
+                cameraCtr.MoveCamera = true;
+                SubUI.SetActive(true);
+            }
+            // call for Gamer Over UI
+            // else{
+
+            // }
+        }
     }
 
     void DisplayTime(float timeToDisplay)

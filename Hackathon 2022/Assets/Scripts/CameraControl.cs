@@ -13,6 +13,9 @@ public class CameraControl : MonoBehaviour
     float walkSpeed = 0.25f;
     float currentSpeed = 0;
 
+    public GameObject pauseMenu;
+    public GameObject endMenu;
+
     public bool isSprinting = false;
 
     public int roty = 0;
@@ -40,7 +43,13 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+
+        if (!pauseMenu.activeSelf && !endMenu.activeSelf)
+            Cursor.lockState = CursorLockMode.Locked;
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         isSprinting = Input.GetAxis("Sprint") != 0;
 
