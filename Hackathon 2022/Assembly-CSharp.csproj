@@ -53,17 +53,17 @@
     <UnityVersion>2021.3.1f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/moneyLeft.cs" />
-    <Compile Include="Assets/Transitions.cs" />
-    <Compile Include="Assets/CameraControl.cs" />
-    <Compile Include="Assets/Timer.cs" />
-    <Compile Include="Assets/CollectItem.cs" />
-    <Compile Include="Assets/UIController.cs" />
-    <Compile Include="Assets/restartEndGame.cs" />
-    <Compile Include="Assets/Course.cs" />
-    <Compile Include="Assets/player.cs" />
-    <Compile Include="Assets/endGameReason.cs" />
-    <Compile Include="Assets/GraduateBarrier.cs" />
+    <Compile Include="Assets/Scripts/moneyLeft.cs" />
+    <Compile Include="Assets/Scripts/Transitions.cs" />
+    <Compile Include="Assets/Scripts/CameraControl.cs" />
+    <Compile Include="Assets/Sounds/Timer.cs" />
+    <Compile Include="Assets/Scripts/CollectItem.cs" />
+    <Compile Include="Assets/Scripts/UIController.cs" />
+    <Compile Include="Assets/Scripts/restartEndGame.cs" />
+    <Compile Include="Assets/Scripts/Course.cs" />
+    <Compile Include="Assets/Scripts/GraduateBarrier.cs" />
+    <Compile Include="Assets/Scripts/player.cs" />
+    <Compile Include="Assets/Scripts/endGameReason.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
