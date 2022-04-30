@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{5150739C-81A4-A9EC-B7FF-DA09633F5F29}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UIController.cs">
+    <Files>
+      <File FileName="Assets/UIController.cs" Line="6" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hackathon 2022" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="UIController.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d9f330f8-684e-4698-a471-34b142d636aa" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
